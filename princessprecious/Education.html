@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | PRINCESS PRECIOUS</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        /* Table Specific Premium Styling */
+        .education-container {
+            overflow-x: auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid var(--gold);
+            margin-top: 2rem;
+        }
+
+        .premium-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .premium-table th {
+            background-color: var(--header-footer);
+            color: var(--gold);
+            padding: 20px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .premium-table td {
+            padding: 18px 20px;
+            border-bottom: 1px solid #eee;
+            transition: var(--transition);
+        }
+
+        .premium-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .premium-table tr:hover td {
+            background-color: var(--hover-pink);
+            color: var(--navy-text);
+            transform: scale(1.01);
+            cursor: default;
+        }
+
+        .year-badge {
+            background: var(--header-footer);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">PRINCESS PRECIOUS</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Education.html" class="active">Education</a>
+            <a href="hobby.html">Hobbies</a>
+            <a href="Business.html">Business</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container reveal">
+        <h1 style="text-align: center; margin-bottom: 1rem;">Educational Background</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 3rem;">A timeline of my academic and professional certifications.</p>
+        
+        <div class="education-container">
+            <table class="premium-table">
+                <thead>
+                    <tr>
+                        <th>Institution</th>
+                        <th>Qualification</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Refactory Academy</b></td>
+                        <td>Certificate in Foundations in Software Development</td>
+                        <td><span class="year-badge">2026</span></td>
+                    </tr>
+                    <tr>
+                        <td><b>Livingstone International University (LIU)</b></td>
+                        <td>Certificate in CCNA 1, 2, and 3</td>
+                        <td><span class="year-badge">2025</span></td>
+                    </tr>
+                    <tr>
+                        <td><b>Mbale Secondary School</b></td>
+                        <td>Uganda Advanced Certificate of Education (UACE)</td>
+                        <td><span class="year-badge">2024</span></td>
+                    </tr>
+                    <tr>
+                        <td><b>Mbale Secondary School</b></td>
+                        <td>Uganda Certificate of Education (UCE)</td>
+                        <td><span class="year-badge">2022</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Princess Precious. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

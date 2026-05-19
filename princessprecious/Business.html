@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business | PRINCESS PRECIOUS</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Force footer to bottom layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            flex: 1 0 auto;
+        }
+        footer {
+            flex-shrink: 0;
+        }
+
+        /* Portfolio Business Layout Modifications */
+        .portfolio-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .portfolio-intro p {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .business-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .biz-card {
+            background: #ffffff;
+            border: 1px solid var(--gold);
+            border-radius: 15px;
+            padding: 2.5rem;
+            transition: var(--transition);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .biz-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--hover-pink);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .external-link {
+            margin-top: 1.5rem;
+            color: var(--gold);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+        .external-link:hover {
+            color: var(--navy-text);
+            text-decoration: underline;
+        }
+
+        /* Integrated Ecosystem Deep Dive Panel */
+        .ecosystem-breakdown {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 2px dashed rgba(212, 175, 55, 0.3);
+        }
+        .ecosystem-title {
+            text-align: center;
+            color: var(--navy-text);
+            margin-bottom: 3rem;
+        }
+        .section-block {
+            background: #fff;
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            border-radius: 0 12px 12px 0;
+        }
+        .section-block h3 {
+            color: var(--header-footer);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-block h3 i {
+            color: var(--gold);
+        }
+        .data-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0;
+        }
+        .data-list li {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .data-list li strong {
+            color: var(--navy-text);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-bar">
+        <a href="index.html" class="logo">PRINCESS PRECIOUS</a>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Education.html">Education</a>
+            <a href="hobby.html">Hobbies</a>
+            <a href="Business.html" class="active">Business</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container reveal">
+        <div class="portfolio-intro">
+            <h1>Professional Ventures</h1>
+            <p>Combining technical skill with entrepreneurial drive.</p>
+        </div>
+        
+        <div class="business-grid">
+            <div class="biz-card">
+                <div>
+                    <h2 style="color: var(--header-footer)">Emberharbour</h2>
+                    <p style="margin-top:1rem;">A one-stop digital marketplace for local needs integrated into a comprehensive lifestyle hub.</p>
+                </div>
+                <a href="Emberharbour.html" class="external-link">
+                    Visit My Business &rarr;
+                </a>
+            </div>
+        
+            <div class="biz-card">
+                <div>
+                    <h2 style="color: var(--header-footer)">Web Architecture</h2>
+                    <p style="margin-top:1rem;">Skilled in developing websites and eager to contribute to dynamic tech environments.</p>
+                </div>
+                <a href="https://your-portfolio-extension.com" target="_blank" class="external-link">
+                    View Project Gallery &rarr;
+                </a>
+            </div>
+        </div>
+
+        <div class="ecosystem-breakdown">
+            <h2 class="ecosystem-title">Emberharbour Ecosystem Overview</h2>
+            
+            <div class="section-block">
+                <h3><i class="fas fa-exclamation-triangle"></i> The Hurdles We Face (Market Problems)</h3>
+                <ul class="data-list">
+                    <li>
+                        <strong>Price-Quality Gap</strong>
+                        Finding "cheap" goods often means sacrificing quality, while premium items are overpriced due to middlemen.
+                    </li>
+                    <li>
+                        <strong>Fragmented Real Estate</strong>
+                        Finding housing requires physical travel and dealing with unverified brokers, incurring high costs.
+                    </li>
+                    <li>
+                        <strong>Unreliable Access</strong>
+                        Domestic help is found via word-of-mouth with no standard for vetting, safety, or fair pricing.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h3><i class="fas fa-lightbulb"></i> An Integrated Lifestyle Hub (The Solution)</h3>
+                <ul class="data-list">
+                    <li>
+                        <strong>Curated E-Commerce</strong>
+                        Verified suppliers offering high-quality goods delivered directly home.
+                    </li>
+                    <li>
+                        <strong>Virtual Real Estate</strong>
+                        Localized directory with verified photos and digital tours to eliminate scouting travel.
+                    </li>
+                    <li>
+                        <strong>On-Demand Services</strong>
+                        A marketplace for vetted domestic professionals like cleaners, babysitters, and chefs.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h3><i class="fas fa-star"></i> Core Value Propositions</h3>
+                <ul class="data-list">
+                    <li>
+                        <strong>Hyper-Local Focus</strong>
+                        Fast delivery and localized providers unlike global platforms.
+                    </li>
+                    <li>
+                        <strong>Cost Efficiency</strong>
+                        Optimized logistics and reduced broker layers keep prices low.
+                    </li>
+                    <li>
+                        <strong>Trust & Safety</strong>
+                        Vetted listings and providers protect you from fraud.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h3><i class="fas fa-cogs"></i> Operational Framework</h3>
+                <ul class="data-list">
+                    <li>
+                        <strong>Technology</strong>
+                        Secure mobile app & web platform with integrated payments.
+                    </li>
+                    <li>
+                        <strong>Logistics</strong>
+                        Motorcycle-based delivery network for "comfort of home" speed.
+                    </li>
+                    <li>
+                        <strong>Partnerships</strong>
+                        Local wholesalers and real estate developers.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-block">
+                <h3><i class="fas fa-tags"></i> Monetization & Pricing Model</h3>
+                <ul class="data-list">
+                    <li>
+                        <strong>Retail Commission</strong>
+                        Transaction fees on each retail sale.
+                    </li>
+                    <li>
+                        <strong>Listing Fees</strong>
+                        Charged to real estate agents for premium visibility.
+                    </li>
+                    <li>
+                        <strong>Service Percentage</strong>
+                        Percentage from service provider fees for jobs completed.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Princess Precious. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

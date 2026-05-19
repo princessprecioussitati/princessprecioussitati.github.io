@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | PRINCESS PRECIOUS</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        .contact-form {
+            background: #fdfdfd;
+            padding: 2.5rem;
+            border-radius: 20px;
+            border-top: 5px solid var(--gold);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+        }
+        .input-group { margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.5rem; font-weight: bold; color: var(--header-footer); }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        input:focus { border-color: var(--gold); outline: none; }
+        
+        .social-links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+        .social-links a {
+            font-size: 1.8rem;
+            color: var(--header-footer);
+            transition: var(--transition);
+        }
+        .social-links a:hover {
+            color: var(--gold);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">PRINCESS PRECIOUS</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Education.html">Education</a>
+            <a href="hobby.html">Hobbies</a>
+            <a href="Business.html">Business</a>
+            <a href="Contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container reveal">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h1>Let's Connect</h1>
+                <p style="margin: 1.5rem 0;">I am a strong believer in clean code and eager to contribute to real-world software solutions. Reach out for collaborations!</p>
+                
+                <h3>Follow My Journey</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="email@gmail.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Type your message here..."></textarea>
+                </div>
+                <button type="submit" class="cta-button" style="width:100%; border:none;">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Princess Precious. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies | PRINCESS PRECIOUS</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hobby-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        .hobby-card {
+            background: #FFFFFF;
+            padding: 2.5rem;
+            border-radius: 20px;
+            border-bottom: 5px solid var(--gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            text-align: center;
+        }
+        .hobby-card:hover {
+            transform: translateY(-15px);
+            background: var(--header-footer);
+            color: #FFFFFF;
+        }
+        .hobby-icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+        .hobby-card:hover .hobby-icon {
+            color: var(--cta-yellow);
+            transform: rotate(10deg);
+        }
+        .hobby-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        .hobby-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">PRINCESS PRECIOUS</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Education.html">Education</a>
+            <a href="hobby.html" class="active">Hobbies</a>
+            <a href="Business.html">Business</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container reveal">
+        <h1 style="text-align: center; margin-bottom: 1rem;">Beyond the Code</h1>
+        <p style="text-align: center; color: #666; max-width: 600px; margin: 0 auto 3rem;">
+            When I'm not developing software, I immerse myself in creative and technical pursuits that keep my mind sharp and inspired.
+        </p>
+
+        <div class="hobby-grid">
+            <div class="hobby-card reveal">
+                <i class="fas fa-pen-nib hobby-icon"></i>
+                <h3>Novel Writing</h3>
+                <p>I enjoy crafting intricate stories and building worlds through words, which enhances my creativity and attention to detail.</p>
+            </div>
+
+            <div class="hobby-card reveal" style="animation-delay: 0.2s;">
+                <i class="fas fa-book-open hobby-icon"></i>
+                <h3>Reading</h3>
+                <p>A lifelong passion for literature that broadens my perspective and fuels my imagination for both writing and problem-solving.</p>
+            </div>
+
+            <div class="hobby-card reveal" style="animation-delay: 0.4s;">
+                <i class="fas fa-laptop-code hobby-icon"></i>
+                <h3>Tech Mastery</h3>
+                <p>I am passionate about continuously learning new technologies and honing my computer skills to stay ahead in the tech landscape.</p>
+            </div>
+
+            <div class="hobby-card reveal" style="animation-delay: 0.6s;">
+                <i class="fas fa-utensils hobby-icon"></i>
+                <h3>Culinary Arts</h3>
+                <p>Baking is my favorite way to practice precision and patience, resulting in delicious creations that bring people together.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Princess Precious. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
